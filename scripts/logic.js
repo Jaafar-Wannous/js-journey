@@ -81,10 +81,10 @@ console.log(acc2.getSummary());
 acc1.printHistory();
 
 
-//Q4
-const taskInput = document.querySelector('.task-input');
-const addBtn = document.querySelector('.add-btn');
-const taskList = document.querySelector('.task-list');
+//Q3
+const taskInput = document.getElementById('task-input')
+const addBtn = document.getElementById('add-btn');
+const taskList = document.getElementById('task-list');
 
 function addTask() {
     const taskText = taskInput.value.trim();
@@ -101,7 +101,7 @@ function addTask() {
         });
 
         const deleteBtn = document.createElement('button');
-        deleteBtn.textContent = 'ْX';
+        deleteBtn.textContent = 'X';
         deleteBtn.classList.add('delete-btn');
 
         deleteBtn.addEventListener('click', () => {
